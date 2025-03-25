@@ -1,0 +1,24 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# VisDrone2019-DET dataset https://github.com/VisDrone/VisDrone-Dataset by Tianjin University
+# Example usage: python train.py --data VisDrone.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── VisDrone  ← downloads here (2.3 GB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /opt/data/private/DATA/OGSOD-1.0  # dataset root dir
+train: sar/images/train  # train images (relative to 'path')  6471 images
+val: sar/images/test  # val images (relative to 'path')  548 images
+test: sar/images/test  # test images (optional)  1610 images
+
+train1: /opt/data/private/DATA/OGSOD-1.0/rgb/images/train  # train images (relative to 'path')  6471 images
+val1: /opt/data/private/DATA/OGSOD-1.0/rgb/images/test  # val images (relative to 'path')  548 images
+test1: /opt/data/private/DATA/OGSOD-1.0/rgb/images/test  # test images (optional)  1610 images
+
+# Classes
+nc: 3 # number of classes
+names: ['bridge', 'harbor', 'storage_tank']
+
+
